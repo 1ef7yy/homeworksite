@@ -1,3 +1,5 @@
 const errorHandler = (err) => {};
 
-module.exports = errorHandler;
+module.exports = {
+    errorHandler: errorHandler
+};

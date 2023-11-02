@@ -1,3 +1,9 @@
-const statusHandler = (status) => {};
+const path = require("path");
 
-module.exports = statusHandler;
+const statusHandler = (response, status) => {
+    return response.sendFile(path.resolve('static/pages/notFound.html'));
+};
+
+module.exports = {
+    statusHandler: statusHandler
+};

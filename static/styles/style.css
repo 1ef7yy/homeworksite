@@ -16,6 +16,15 @@ body{
     left: 10px;
 }
 
+a.telegram{
+    text-decoration: none;
+    color: black;
+}
+
+a.telegram:hover{
+    text-decoration: underline;
+}
+
 .main{
     margin-top: 50px;
 }
