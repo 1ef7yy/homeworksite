@@ -1,16 +1,20 @@
 body{
     margin: 0;
     font-family: Verdana, sans-serif;
+    background-color: #1F1F1F;
+    color: #f8f9fa;
+    /* for darker text: #dee2e6 ?*/
 }
 
 .header{
     margin-top: 30px;
     text-align: center;
+    height: 160px;
 }
 
 .logo{
-    width: 170px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 10px;
     left: 10px;
