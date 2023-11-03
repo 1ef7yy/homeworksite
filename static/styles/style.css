@@ -44,7 +44,7 @@ a.telegram:hover{
     border-color: rgba(255, 255, 255, 0.85);
     border-width: 2px;
     background-color: #1C1C1CFF;
-    width: 80vw;
+    width: 60vw;
     height: 10vh;
     margin: 0 auto;
     margin-top: 10px;
@@ -56,8 +56,9 @@ a.telegram:hover{
 }
 
 .subject-title{
-    padding-top: 15px;
-    padding-left: 15px;
+    position: relative;
+    top: 10px;
+    left: 30px;
     font-size: 20px;
     font-weight: bold;
 }

@@ -6,79 +6,86 @@
     <title>домашка внатуре</title>
     <script>
         document.addEventListener("click", (event) => {
+            let target_id;
             if (event.target.children.length > 0){
                 console.log(event.target.id);
-                window.open(`${location.href}?subject=${event.target.id}`, "_self");
+                target_id = event.target.id;
+
             } else {
                 console.log(event.target.parentElement.id);
-                window.open(`${location.href}?subject=${event.target.parentElement.id}`, "_self")
+                 target_id = event.target.parentElement.id;
             }
+
+            if (target_id){
+                window.open(`${location.href}?subject=${target_id}`, '_self');
+            }
+
         });
     </script>
 </head>
 <body>
 <div class="header">
     <img src="../logos/bsbo_mirea_logo.svg" alt="logo" class="logo">
-    <h2 id="title">Домашние задания</h2>
+    <h1 id="title">Домашние задания</h1>
 
 </div>
 
 <div class="main">
     <div class="subjects">
         <div class="subject" id="math_analysis">
-            <div class="subject-title">
-                    Матан
-            </div>
+            <span class="subject-title">
+                    Математический анализ
+            </span>
         </div>
         <div class="subject" id="compsci">
-            <div class="subject-title">
+            <span class="subject-title">
                 Информатика
-            </div>
+            </span>
         </div>
         <div class="subject" id="linear_algebra">
-            <div class="subject-title">
-                Линейная алгебра
-            </div>
+            <span class="subject-title">
+                Линейная алгебра и аналитическая геометрия
+            </span>
         </div>
         <div class="subject" id="physed">
-            <div class="subject-title">
-                Физ-ра
-            </div>
+            <span class="subject-title">
+                Физическая культура и спорт
+            </span>
         </div>
         <div class="subject" id="history">
-            <div class="subject-title">
+            <span class="subject-title">
                 История России
-            </div>
+            </span>
         </div>
         <div class="subject" id="org">
-            <div class="subject-title">
-                ОРГ
-            </div>
+            <span class="subject-title">
+                Основы российской государственности
+            </span>
         </div>
         <div class="subject" id="physics">
-            <div class="subject-title">
+            <span class="subject-title">
                 Физика
-            </div>
+            </span>
         </div>
         <div class="subject" id="english">
-            <div class="subject-title">
+            <span class="subject-title">
                 Иностранный язык
-            </div>
+            </span>
         </div>
         <div class="subject" id="russian">
-            <div class="subject-title">
-                Русский язык
-            </div>
+            <span class="subject-title">
+                Русский язык и культура речи
+            </span>
         </div>
         <div class="subject" id="prof_intro">
-            <div class="subject-title">
-                Введение в проф
-            </div>
+            <span class="subject-title">
+                Введение в профессиональную деятельность
+            </span>
         </div>
         <div class="subject" id="oop">
-            <div class="subject-title">
-            ООП
-            </div>
+            <span class="subject-title">
+            Объектно-ориентированное программирование
+            </span>
         </div>
     </div>
 

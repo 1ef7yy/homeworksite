@@ -1,11 +1,10 @@
 const utils = require("auto-load")("./utils"), // require all files from utils
-      express = require("express");
-const {response} = require("express");
-      app = express();
-      port = process.env.PORT || 3000
-      ;
+      express = require("express"),
+      app = express(),
+      port = process.env.PORT || 3000;
 
 app.use(express.static("static"));
+app.set("view engine", "hbs");
 
 app.post('/', (request, response, next) => {
     next("index.html");
@@ -15,7 +14,7 @@ app.use("/homework.html", (request, response) => {
    let subject = request.query.subject;
    if (subject){
        if (Object.keys(utils.validSubjects).includes(subject)){
-           response.send(`${subject} hw`);
+           response.render(`${__dirname}/static/templates/homeworkTemplate.hbs`, utils.pageRenderer.renderObject(subject));
        } else {
            utils.statusHandler.statusHandler(response, 404);
        }

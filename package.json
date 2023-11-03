@@ -12,6 +12,7 @@
   "dependencies": {
     "auto-load": "^3.0.4",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
   }
 }
