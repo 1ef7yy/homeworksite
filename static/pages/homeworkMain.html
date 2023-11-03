@@ -2,9 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <title>домашка внатуре</title>
+    <script>
+        document.addEventListener("click", (event) => {
+            if (event.target.children.length > 0){
+                console.log(event.target.id);
+                window.open(`${location.href}?subject=${event.target.id}`, "_self");
+            } else {
+                console.log(event.target.parentElement.id);
+                window.open(`${location.href}?subject=${event.target.parentElement.id}`, "_self")
+            }
+        });
+    </script>
 </head>
 <body>
+<div class="header">
+    <img src="../logos/bsbo_mirea_logo.svg" alt="logo" class="logo">
+    <h2 id="title">Домашние задания</h2>
 
+</div>
+
+<div class="main">
+    <div class="subjects">
+        <div class="subject" id="math_analysis">
+            <div class="subject-title">
+                    Матан
+            </div>
+        </div>
+        <div class="subject" id="compsci">
+            <div class="subject-title">
+                Информатика
+            </div>
+        </div>
+        <div class="subject" id="linear_algebra">
+            <div class="subject-title">
+                Линейная алгебра
+            </div>
+        </div>
+        <div class="subject" id="physed">
+            <div class="subject-title">
+                Физ-ра
+            </div>
+        </div>
+        <div class="subject" id="history">
+            <div class="subject-title">
+                История России
+            </div>
+        </div>
+        <div class="subject" id="org">
+            <div class="subject-title">
+                ОРГ
+            </div>
+        </div>
+        <div class="subject" id="physics">
+            <div class="subject-title">
+                Физика
+            </div>
+        </div>
+        <div class="subject" id="english">
+            <div class="subject-title">
+                Иностранный язык
+            </div>
+        </div>
+        <div class="subject" id="russian">
+            <div class="subject-title">
+                Русский язык
+            </div>
+        </div>
+        <div class="subject" id="prof_intro">
+            <div class="subject-title">
+                Введение в проф
+            </div>
+        </div>
+        <div class="subject" id="oop">
+            <div class="subject-title">
+            ООП
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+
+</div>
 </body>
 </html>

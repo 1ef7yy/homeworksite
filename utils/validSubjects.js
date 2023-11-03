@@ -1,2 +1,14 @@
-let validSubjects = ["lineal_algebra", "math_analysis"];
+let validSubjects = {
+    "math_analysis": "Математический анализ",
+    "compsci": "Информатика",
+    "linear_algebra": "Линейная алгебра и аналитическая геометрия",
+    "physed": "Физическая культура и спорт",
+    "history": "История России",
+    "org": "Основы российской государственности",
+    "physics": "Физика",
+    "english": "Иностранный язык",
+    "russian": "Русский язык и культура речи",
+    "prof_intro": "Введение в профессиональную деятельность",
+    "oop": "Объектно-ориентированное программирование"
+};
 module.exports = validSubjects;
