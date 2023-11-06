@@ -12,7 +12,9 @@ app.post('/', (request, response, next) => {
 
 app.use("/homework.html", (request, response) => {
    let subject = request.query.subject;
+   // checking if the url contains ?subject=
    if (subject){
+       // checking whether such subject exists, if so, render template
        if (Object.keys(utils.validSubjects).includes(subject)){
            response.render(`${__dirname}/static/templates/homeworkTemplate.hbs`, utils.pageRenderer.renderObject(subject));
        } else {

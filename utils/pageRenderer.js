@@ -2,7 +2,7 @@ const {render} = require("express/lib/application"),
       validSubjects = require("./validSubjects");
 const renderObject = (subject_id) => {
     return {
-        title: validSubjects[subject_id]
+        subject: validSubjects[subject_id]
 
     };
 };
